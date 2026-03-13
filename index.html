@@ -1,201 +1,354 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - JOEL ALEJO APAZA</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="">Mi logotipo</a>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#">Trayectoria</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <button class="btn-cv">Descargar CV</button>
-      </nav>
-    </header>
-    <section id="inicio">
-      <div class="inicio-content">
-        <h1>Joel Alejo Apaza</h1>
-        <h2>Ingeniero de Sistemas | Front-End Developer & Diseñador UI/UX.</h2>
-        <p>
-          Soy un Ingeniero de Sistemas apasionado por la convergencia entre la
-          funcionalidad técnica y el diseño visual. Me especializo en el
-          desarrollo Front-End con un enfoque en la experiencia del usuario
-          (UI/UX) para crear interfaces intuitivas y atractivas.
-        </p>
-        <p>
-          Actualmente me desempeño en el rubro bancario como encargado de
-          monitoreo y lidero mi emprendimiento Dimensión Creativa Digital, donde
-          imparto cursos de tecnología a niños, jóvenes y padres.
-        </p>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - JOEL ALEJO APAZA</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li>
+          <a href="#">
+            <i class="ri-briefcase-3-line"></i>
+            Proyectos
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-code-box-line"></i>
+            Habilidades
+          </a>
+        </li>
+        <li class="nav-logo">
+          <a href="#" class="logo">
+            <img src=".//images/logoAlejo.png" alt="Logotipo Joel Alejo">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-route-line"></i>
+            Trayectoria
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="ri-send-plane-fill"></i>
+            Contacto
+          </a>
+        </li>
+      </ul>
+      <div class="nav-btns">
+        <a href="" class="btn-cv">
+          <i class="ri-file-download-line"></i> <span>CV</span>
+        </a>
+        <button id="nav-btns-tema" class="nav-btns-tema">
+  <i class="ri-sun-line"></i>
+</button>
+      </div>
+    </nav>
+  </header>
+  <section id="inicio" class="inicio container">
+    <div class="inicio-content">
+      <h1><span class="txt-amarillo ">Joel</span>
+        <span class="txt-celeste">Alejo Apaza</span>
+      </h1>
+      <h2>
+        <span class="txt-azul">Ingeniero de Sistemas</span> <br>
+        <span class="txt-amarillo">Front-End Developer</span>
+      </h2>
+      <p>
+        Un pasionado por la convergencia entre la
+        funcionalidad técnica y el diseño visual. Enfocado en el
+        desarrollo Front-End con un enfoque en la experiencia del usuario
+        (UI/UX).
+      </p>
+      </br>
+      <p>
+        Actualmente me desempeño en el rubro bancario como encargado de
+        monitoreo y lidero mi emprendimiento Dimensión Creativa Digital, impartiendo cursos de tecnología a niños,
+        jóvenes y papas modernos.
+      </p>
+      <div class="inicio-contactos">
+        <a href="#" class="btn-estilo"><span>LinkedIn</span></a>
+        <a href="#" class="btn-estilo">GitHub</a>
+      </div>
+    </div>
+
+    <div class="inicio-img">
+      <img src=".//images/fotoPerfilJoel.jpg" alt="Imagen - Foto Joel" />
+    </div>
+
+  </section>
+  <section id="proyectos" class="proyectos container">
+    <h2 class="proyecto-titulo"><span class="txt-celeste">Mis</span> <span class="txt-amarillo">Proyectos</span></h2>
+    <h3 class="proyecto-subtitulo">Diseño y Desarrollo Web</h3>
+    <div class="categoria-web">
+      <article id="" class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="images/pagina EduSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio Educativo EDU SPACE</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="images/pagina BiSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio web Bispace S.R.L.</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="/images/pagina BiSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio web Bispace S.R.L.</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+    </div>
+    <a href="" class="btn-estilo btn-verMas">Ver mas</a>
+    <h3 class="proyecto-subtitulo">Diseño Grafico</h3>
+    <div class="categoria-DiseñoGrafico">
+      <article class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="/images/pagina BiSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio web Bispace S.R.L.</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="/images/pagina BiSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio web Bispace S.R.L.</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta-img">
+          <img src="/images/pagina BiSpace.PNG" alt="Img del proyecto1" />
+        </div>
+        <div class="tajeta-content">
+          <h4>Sitio web Bispace S.R.L.</h4>
+          <p>descripcion Breve</p>
+          <a href="">GitHub</a>
+          <a href="">Ver</a>
+        </div>
+      </article>
+    </div>
+    <a href="" class="btn-estilo btn-verMas">ver mas</a>
+  </section>
+
+  <section id="habilidades" class="habilidades container">
+    <h2><span class="txt-celeste">Habilidades</span> <span class="txt-amarillo">Tecnicas</span></h2>
+    <h3>Frontend Development</h3>
+    <div class="icono-habTecnicas">
+      <div class="icono-content">
+        <i class="devicon-html5-plain colored"></i>
+        <span>HTML5</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-css3-plain colored"></i>
+        <span>CSS3</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-javascript-plain colored"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-bootstrap-plain colored"></i>
+        <span>Bootstrap</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-tailwindcss-original colored"></i>
+        <span>Tailwind</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-react-original colored"></i>
+        <span> ReactJS</span>
+      </div>
+    </div>
+    <h3>Diseño Visual</h3>
+    <div class="icono-habTecnicas">
+      <div class="icono-content">
+        <i class="devicon-photoshop-plain colored"></i>
+        <span>Adobe Photoshop</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-illustrator-plain colored"></i>
+        <span>Adobe Illustrator</span>
+      </div>
+      <div class="icono-content">
+        <i class="devicon-figma-plain colored"></i>
+        <span>Figma</span>
+      </div>
+    </div>
+    <h3>Herramientas & Otros</h3>
+    <div class="icono-habTecnicas">
+      <div class="icono-content">
+        <i class="devicon-git-plain colored"></i>
+        <span>Git & GitHub</span>
+      </div>
+      <div class="icono-content">
+        <i class="ri-tools-line"></i>
+        <span>Mantenimiento de Hardware</span>
+      </div>
+      <div class="icono-content">
+        <i class="ri-file-excel-2-line"></i>
+        <span>Ofimática (Excel Avanzado).</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="trayectoria" class="trayectoria container">
+    <h2 class="proyecto-titulo"><span class="txt-celeste">Mi </span><span class="txt-amarillo">Trayectoria</span></h2>
+
+    <div class="trayectoria-wrapper">
+
+      <div class="trayectoria-col">
+        <h3 class="trayectoria-subtitulo"><i class="ri-briefcase-line"></i> Experiencia Profesional</h3>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - 2026 (Presente)</div>
+            <div class="timeline-content">
+              <h4>Encargado de Monitoreo</h4>
+              <p>en ATC Red Enlace (Rubro Bancario).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h4>Diseñador y Desarrollador Web</h4>
+              <p>en Bi Space S.R.L</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h4>Voluntariado (Instructor de Excel)</h4>
+              <p>en EDU. MUHO.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h4>Desarrollador de Software</h4>
+              <p>en ISAS</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+              <h4>Encargado de sistemas y Marketing(redes sociales)</h4>
+              <p>Avb Kant S.R.L.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="inicio-img">
-        <img src="" alt="Imagen - Foto Joel" />
-      </div>
-    </section>
-    <section id="proyectos">
-      <h3>Mis Proyectos</h3>
-      <div class="categoria-web">
-        <h3>Diseño y Desarrollo Web</h3>
-        <article>
-          <img src="" alt="Img del proyecto1" />
-          <h4>Titulo del Proyecto1</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <article>
-          <img src="" alt="Img del proyecto2" />
-          <h4>Titulo del Proyecto2</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <article>
-          <img src="" alt="Img del proyecto3" />
-          <h4>Titulo del Proyecto3</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <a href="">Ver mas</a>
-      </div>
-      <div class="categoria-DiseñoGrafico">
-        <h3>Diseño Grafico</h3>
-        <article>
-          <img src="" alt="Img del proyecto1" />
-          <h4>Titulo del Proyecto1</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <article>
-          <img src="" alt="Img del proyecto2" />
-          <h4>Titulo del Proyecto2</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <article>
-          <img src="" alt="Img del proyecto3" />
-          <h4>Titulo del Proyecto3</h4>
-          <p>descripcion Breve</p>
-          <a href="">GitHub</a>
-          <a href="">Ver</a>
-        </article>
-        <a href="">ver mas</a>
-      </div>
-    </section>
+      <div class="trayectoria-col">
+        <h3 class="trayectoria-subtitulo"><i class="ri-graduation-cap-line"></i> Formación Académica</h3>
+        <div class="timeline">
 
-    <section id="habilidades">
-      <h2>Habilidades Tecnicas</h2>      
-      <div class="icono-habTecnicas">
-        <h3>Frontend Development</h3>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>HTML5</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>CSS3</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>JavaScript</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Bootstrap</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Tailwind</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span> ReactJS</span>
-        </div>
-      </div>
-      <div class="icono-habTecnicas">
-        <h3>Diseño Visual</h3>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Adobe Photoshop</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Adobe Illustrator</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Figma</span>
-        </div>        
-      </div>
-       <div class="icono-habTecnicas">
-        <h3>Herramientas & Otros</h3>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Git & GitHub</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Mantenimiento de Hardware</span>
-        </div>
-        <div class="icono-content">
-          <i>imagen del icono</i>
-          <span>Ofimática (Excel Avanzado).</span>
-        </div>        
-      </div>
-    </section>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h4>Titulo en Ingeniería de Sistemas</h4>
+              <p>- Universidad Teconologica Boliviana - UTB</p>
+            </div>
+          </div>
 
-    <section id="Trayectoria">
-        <div class="experiencia">
-            <h2>Mi trayectoria Profesional</h2>
-            <ul>
-                <li><span>2025 - Presente:</span><h4>Encargado de Monitoreo</h4> en ATC Red Enlace (Rubro Bancario).</li>
-                <li><span>2024:</span><h4>Diseñador y Desarrollador Web</h4> en Bi Space S.R.L..</li>
-                <li><span>2023:</span><h4>Voluntariado (Instructor de Excel)</h4> en EDU. MUHO.</li>
-                <li><span>2024:</span><h4>Desarrollador de Software</h4> en ISAS.</li>
-                <li><span>2024:</span><h4>Soporte Técnico</h4> en TOYOSA SA.</li>
-                <li><span>2024:</span><h4>Encargado de Sistemas y Marketing</h4> en Avb Kant S.R.L..</li>
-            </ul>
-        </div>
-        <div class="Formacion">
-            <h2>Fomacion Academica</h2>
-            <ul>
-                <li><span>2023:</span><h4>Título en Ingeniería de Sistemas</h4> - Universidad Tecnológica Boliviana.</li>
-                <li><span>2016:</span><h4>Técnico Medio en Programación </h4> - Instituto Técnico Ipce&s.</li>
-            </ul>
-        </div>
-        <div class="emprendimiento">
-            <h2>Mi emprendimiento</h2>
-            <ul>
-                <li><span>Fundador y Tutor:</span>TDimensión Creativa Digital. Impartiendo cursos de tecnología a niños, jóvenes y padres.</li>                
-            </ul>
-        </div>       
-    </section>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h4>Tecnico medio en Programacion en Sistemas Informaticos</h4>
+              <p>Instituto Tecnico IPCE&s</p>
+            </div>
+          </div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes un proyecto en mente o buscas un perfil técnico con visión de diseño? Estoy disponible para nuevas oportunidades.</p>
-        <a href="">email</a>
-        <a href="">LinkenIn</a>
-        <a href="">GitHub</a>
-        <a href="">WhatsApp</a>
-    </section>
-    <footer>
-      <p>&copy; © 2026 Joel Alejo Apaza - Todos los derechos reservados, tambien los izquierdos</p>
-      <p>Diseñado y Desarrollado con ❤️ por Joel Alejo.</p>
-    </footer>
-  </body>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto container">
+    <div class="contacto-header">
+      <h2 class="proyecto-titulo">Mi <span class="txt-amarillo">Contacto</span></h2>
+      <p>
+        ¿Tienes un proyecto en mente o buscas un perfil con visión de
+        diseño? Siempre con muchas ganas de asumir nuevos retos y para nuevas oportunidades.
+      </p>
+    </div>
+
+    <div class="contacto-grid">
+      <a href="mailto:tu-correo@ejemplo.com" class="contacto-card">
+        <i class="ri-mail-line"></i>
+        <span>Email</span>
+      </a>
+
+      <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contacto-card">
+        <i class="ri-linkedin-box-line"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="https://github.com/tu-usuario" target="_blank" class="contacto-card">
+        <i class="ri-github-line"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://wa.me/591XXXXXXXX" target="_blank" class="contacto-card whatsapp">
+        <i class="ri-whatsapp-line"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </section>
+  <footer class="footer-simple">
+  <div class="footer-container">
+    <p class="copyright">
+      &copy; 2026 <strong>Joel Alejo Apaza</strong> - Todos los derechos reservados, 
+      <span class="txt-amarillo">también los izquierdos.</span>
+    </p>
+    <p class="author">
+      Diseñado y Desarrollado con <i class="ri-heart-fill pulse"></i> por Joel Alejo.
+    </p>
+  </div>
+</footer>
+  <script src="codigo.js"></script>
+</body>
+
 </html>
