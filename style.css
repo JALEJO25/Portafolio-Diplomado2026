@@ -15,6 +15,20 @@
   --text-color: #ffffff;
   --card-bg: #1c253b;
   --nav-bg: rgba(14, 22, 40, 0.95);
+  --bg-button:#0e1628;
+
+   --accent-soft: #7ac5ff;      /* Para bordes de tarjetas y líneas de tiempo */
+  --btn-bg:#080d18;
+   --btn-color-border: rgba(255, 255, 255, 0.1); 
+   --btn-bg-hover: #0e1628;
+  --btn-border-hover:rgba(69, 200, 243, 0.4);
+
+  --icon-bg:#0e1628;
+  --card-bg:var(--bg-button);
+  --card-border:rgba(5, 119, 248, 0.1);
+  
+  --linatiempo-color:#45c8f3;
+
 
   /* Escala Tipográfica */
   --fs-h1: 3.5rem; 
@@ -33,9 +47,24 @@
 body.light-theme {
   --bg-body: #ffffff;      
   --text-color: #0e1628;
-  --card-bg: #f5f5f5;
-  --nav-bg: rgba(255, 255, 255, 0.95);
-  --menu-bg: #1775bc;
+ 
+  --btn-bg:#080d18;
+  --btn-bg-hover: #45c8f3;
+  --btn-color-border:var(--secondary);
+  /*--btn-border-hover: var(--accent);*/
+  --card-bg:#f1f5f9;
+  --icon-bg:var(--secondary);
+  --card-border:rgba(42, 142, 182, 0.24);
+
+  --linatiempo-color:#45c8f3;
+
+  /* Variantes del Azul para detalles */
+  --menu-bg: rgba(255, 255, 255, 0.7);    /* Para títulos y nombres */
+   /* Para fondos sutiles de botones o iconos */
+  
+  /* El Dorado/Ambar en Light (lo bajamos un poco para que no brille tanto) */
+  --accent: #f0af23;
+  /*--menu-bg: #1775bc;*/
 }
 body {
  padding-top: 80px;
@@ -95,7 +124,7 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: white;
+  color:var(--text-color);
   text-decoration: none;
   font-weight: var(--fw-medium);
 }
@@ -157,7 +186,7 @@ header {
   margin-left: auto; 
 }
 .nav-logo .logo img {
-  height: 45px; 
+  height: 60px; 
   width: auto; 
   display: block; 
   transition: transform 0.3s ease; 
@@ -165,34 +194,36 @@ header {
 .nav-logo .logo:hover img {
   transform: scale(1.1);
 }
-.btn-cv {
+
+.btn-style {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 12px 25px;
-  background: linear-gradient(145deg, #0e1628, #0a192f); 
-  color: white;
-  border: 1px solid rgba(234,179,8, 0.3);
-  border-radius: 8px;
+ /* background-color: var(--btn-bg); */
+  color: var(--text-color);
+  border: 2px solid var(--btn-color-border);
+  border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
-.btn-cv i{
+.btn-style i{
     font-size: 1.2rem;
     color: var(--accent);
+    font-weight: 100;
 }
 
-.btn-cv:hover {
-  border-color: var(--accent);
-  background-color: #0e1628;
+.btn-style:hover {
+  border-color: var(--btn-border-hover);
+  background-color:var(--btn-bg-hover);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
                 0 0  8PX rgba(234,179,8, 0.2);
 }
-.btn-cv::after{
+.btn-style::after{
     content: '';
     position: absolute;
     top: 0;
@@ -202,27 +233,29 @@ header {
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
     transition: 0.5s;
 }
-.btn-cv:hover:after{
+.btn-style:hover:after{
     left: 100%;
 }
 
 
-.nav-btns-tema {
-  background: linear-gradient(145deg, #0e1628, #0a192f); 
+.icon-style {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--icon-bg);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--accent);
+  color: var(--text-color);
   width: 45px;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
 }
-.nav-btns-tema:hover {
+.icon-style:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--secondary);   
   color: var(--secondary);
 }
-
 .container {
   max-width: 1200px; 
   margin: 0 auto; 
@@ -431,14 +464,14 @@ header {
   margin-bottom: 4rem;
 }
 .tarjeta {
-  background: linear-gradient(65deg, var(--dark), var(--bg-button));
-  border: 1px solid rgba(42, 134, 240, 0.1);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   transition: border 0.3s ease;
   border-radius: 0.5rem;
   padding: 1rem;
 }
 .tarjeta:hover {
-  border: 1px solid var(--accent);
+  border: 1px solid var(--secondary);
   transform: translateY(-2px);
 }
 .tarjeta .tarjeta-img img {
@@ -446,6 +479,13 @@ header {
   height: 200px;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+.tarjeta .proyectos-content-icon{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 1rem;
+  
 }
 .btn-verMas{
   display: block;
@@ -471,7 +511,7 @@ header {
   justify-content: center;
   padding: 20px 10px;
   background: linear-gradient(65deg, var(--dark), var(--bg-button));
- border: 1px solid rgba(255, 255, 255, 0.1);
+ border: 1px solid var(--card-border);
  border-radius: 0.5rem;
  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: default;
@@ -534,7 +574,7 @@ header {
 .timeline{
   position: relative;
   padding-left: 20px;
-  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid var(--linatiempo-color);
 }
 .timeline-item{
   position: relative;
@@ -556,7 +596,7 @@ header {
   backdrop-filter: blur(10px);
   padding: 15px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(42, 142, 182, 0.24);
   transition: 0.3s ease;
 }
 .timeline-content:hover{
