@@ -45,6 +45,13 @@ html{
   --fw-bold: 700;
   --fw-medium: 500;
   --fw-light: 300;
+
+  /* fuente */
+  /* Fuente para Títulos (H1, H2, H3) */
+    --font-titles: 'Space Grotesk', sans-serif;
+    
+    /* Fuente para párrafos y botones */
+    --font-body: 'Space Grotesk', sans-serif;
 }
 /* --- VARIABLES PARA MODO CLARO --- */
 body.light-theme {
@@ -64,7 +71,7 @@ body.light-theme {
   --nav-bg:#45c8f3;
   
   /* Variantes del Azul para detalles */
-  --menu-bg: rgba(255, 255, 255, 0.7);    /* Para títulos y nombres */
+  --menu-bg: rgba(255, 255, 255, 0.856);    /* Para títulos y nombres */
    /* Para fondos sutiles de botones o iconos */
   
   /* El Dorado/Ambar en Light (lo bajamos un poco para que no brille tanto) */
@@ -74,7 +81,7 @@ body.light-theme {
 body {
  padding-top: 80px;
   background-color: var(--bg-body); 
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: var(--font-body);
   transition: background-color 0.3s ease, color 0.3s ease;
   color: var(--text-color);
 }
@@ -84,6 +91,7 @@ h1 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   line-height: 1.1;
+  font-family: var(--font-titles);
 }
 h2 {
   font-size: var(--fs-h2);
@@ -289,6 +297,7 @@ header {
     width: 100%;
     height: 70px;
     background-color: var(--menu-bg);
+    color: var(--bg-body);
     display: flex;
     align-items: center;
     padding: 0;
@@ -708,7 +717,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.03); 
   backdrop-filter: blur(10px); 
   border: 1px solid var(--card-border);
@@ -739,6 +748,18 @@ header {
 }
 .contacto-card.whatsapp:hover i{
   color: #25d366;
+}
+@media (max-width: 768px) {
+  .contacto-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 0 15px;
+  
+  }
+  .contacto-card i{
+  font-size: 1.5rem;
+  }
 }
 
 /* SECCION FOOTER */

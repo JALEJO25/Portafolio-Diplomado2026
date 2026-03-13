@@ -166,6 +166,7 @@ contenedor.addEventListener("click", function(evento){
 });*/
      
 // 1. Usamos la clase de la sección padre: "proyectos"
+/*
 const contenedorProyectos = document.querySelector(".proyectos"); 
 
 if (contenedorProyectos) {
@@ -184,4 +185,4 @@ if (contenedorProyectos) {
     });
 } else {
     console.error("No se encontró el contenedor con la clase .proyectos");
-}
+}*/
