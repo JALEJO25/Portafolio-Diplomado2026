@@ -33,7 +33,19 @@ btnTheme.addEventListener('click', () => {
 });
 
 
+// cod para hacer que el menu en modo movil se esconda al subir tipo linkedin
+let ultimoscrollY=window.scrollY;
+const navbar=document.querySelector(".navbar");
+window.addEventListener("scroll", ()=>{
+    const posicionActualScroll=window.scrollY;
 
+    if(posicionActualScroll>ultimoscrollY && posicionActualScroll>100){
+        navbar.classList.add("navbar--hidden");
+    }else{
+        navbar.classList.remove("navbar--hidden");
+    }
+    ultimoscrollY=posicionActualScroll
+})
 
 
 
