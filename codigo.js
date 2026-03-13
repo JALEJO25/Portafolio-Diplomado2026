@@ -1,3 +1,36 @@
+/*CODIGO PARA CAMBIAR AL TEMA DARK O LIGTH*/
+
+const btnTheme = document.getElementById('nav-btns-tema');
+const body = document.body;
+// Selecciona el icono dentro del botón
+const icon = btnTheme.querySelector('i'); 
+// Función para actualizar el icono
+const updateIcon = (isLight) => {
+  if (isLight) {
+    icon.classList.replace('ri-sun-line', 'ri-moon-line');
+  } else {
+    icon.classList.replace('ri-moon-line', 'ri-sun-line');
+  }
+};
+
+// Comprobar si ya había una preferencia guardada
+if (localStorage.getItem('theme') === 'light') {
+  body.classList.add('light-theme');
+  updateIcon(true);
+}
+
+
+btnTheme.addEventListener('click', () => {
+  body.classList.toggle('light-theme');
+  
+  const isLight = body.classList.contains('light-theme');
+  
+  // Guardar preferencia
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  
+  // Cambiar icono
+  updateIcon(isLight);
+});
 
 
 
